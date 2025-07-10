@@ -8,7 +8,7 @@ import cors from "cors";
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-app.use(cors({origin:"https://taskboardcolab.vercel.app/", credentials: true,});
+app.use(cors({origin:"https://taskboardcolab.vercel.app/", credentials: true,}));
 app.use(express.json());
 app.use("/api/task", taskRouter);
 app.get("/", (req, res) => {
